@@ -36,11 +36,25 @@ Fare: Passenger fare
 
 Embarked: Port of embarkation
 
-🛠️ How to run
-download file
-run on jupyter notebook
-don't forget to download given dataset
+How to Run
+Clone the repo:
 
+Bash
+git clone https://github.com/YourUsername/Titanic-Survival-Prediction.git
+Install requirements:
+
+Bash
+pip install -r requirements.txt
+Open the Notebook:
+
+Bash
+jupyter notebook "TItanicClassificationAnd Modeling.ipynb"
+Repository Structure
+titanic.csv: The raw dataset.
+
+TItanicClassificationAnd Modeling.ipynb: The main Python notebook with code and analysis.
+
+requirements.txt: List of necessary Python libraries.
 
 📈 Results
 The project compares different models to find the most accurate predictor. Key findings include:
