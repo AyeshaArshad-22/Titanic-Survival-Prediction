@@ -1,46 +1,41 @@
 🚢 Titanic Survival Prediction
 Project Overview
-This project implements a comprehensive machine learning pipeline to predict passenger survival during the Titanic disaster. Using the classic titanic.csv dataset, the repository demonstrates advanced data preprocessing, exploratory data analysis (EDA), and classification modeling using Scikit-Learn (sklearn).
+This project implements a comprehensive machine learning pipeline to predict passenger survival during the Titanic disaster. Using the classic titanic.csv dataset, the repository demonstrates exploratory data analysis (EDA), robust data cleaning, and classification modeling to identify the key factors that influenced survival rates.
 
 🚀 Key Features
-Data Cleaning: Robust handling of missing values in Age, Cabin, and Embarked features.
+Data Cleaning: Robust handling of missing values—specifically addressing the 177 missing Age values and 687 missing Cabin records.
 
-Feature Engineering: Transformation of categorical variables and extraction of insights from passenger demographics.
+Exploratory Data Analysis (EDA): In-depth visualizations using Seaborn to identify correlations between survival, gender, and ticket class.
 
-Exploratory Data Analysis (EDA): In-depth visualizations using Seaborn and Matplotlib to identify survival correlations.
+ML Pipeline: Implementation of classification models, focusing on Logistic Regression and Random Forest.
 
-ML Pipeline: Implementation of multiple classification models including:
-
-Logistic Regression
-
-Decision Trees
-
-Random Forest
-
-Evaluation Metrics: Detailed analysis using Accuracy scores, Confusion Matrices, and ROC Curves.
+Performance Evaluation: Detailed analysis using ROC Curves and Accuracy Scores to validate model reliability.
 
 📊 Dataset Description
-The model uses the titanic.csv dataset, which includes the following key features:
+The model uses titanic.csv, featuring:
 
-Survived: (Target) 0 = No, 1 = Yes
+Survived: (Target) 0 = No, 1 = Yes.
 
-Pclass: Ticket class (1, 2, or 3)
+Pclass: Ticket class (1st, 2nd, 3rd).
 
-Sex: Passenger gender
+Sex & Age: Demographic information.
 
-Age: Age in years
+Fare: Price of the ticket.
 
-SibSp / Parch: Number of siblings/spouses/parents/children aboard
+Embarked: Port of embarkation (C, Q, S).
 
-Fare: Passenger fare
+📈 Key Results
+Gender Impact: Data confirms that female passengers had a significantly higher survival rate.
 
-Embarked: Port of embarkation
+Socio-Economic Factor: Passengers in Pclass 1 had a higher probability of survival compared to other classes.
 
-How to Run
+Model Validation: The final model was evaluated using RocCurveDisplay to ensure high predictive power.
+
+🛠️ Installation & Setup
 Clone the repo:
 
 Bash
-git clone https://github.com/YourUsername/Titanic-Survival-Prediction.git
+git clone https://github.com/AyeshaArshad-22/Titanic-Survival-Prediction.git
 Install requirements:
 
 Bash
@@ -49,29 +44,11 @@ Open the Notebook:
 
 Bash
 jupyter notebook "TItanicClassificationAnd Modeling.ipynb"
-Repository Structure
-titanic.csv: The raw dataset.
-
-TItanicClassificationAnd Modeling.ipynb: The main Python notebook with code and analysis.
-
-requirements.txt: List of necessary Python libraries.
-
-📈 Results
-The project compares different models to find the most accurate predictor. Key findings include:
-
-Gender was a significant predictor of survival (Female passengers had a much higher survival rate).
-
-Class (Pclass 1) showed higher survival probability compared to lower classes.
-
-Final model performance was validated using ROC-AUC curves to ensure reliability.
-
 📂 Project Structure
 Plaintext
-├── titanic.csv                             # Raw Dataset
+├── titanic.csv                         # Raw Dataset
 ├── TItanicClassificationAnd Modeling.ipynb # Main Project Notebook
-├── requirements.txt                        # Required Libraries
-└── README.md                               # Project Documentation
-📜 License
-This project is open-source and available under the MIT License.
+├── requirements.txt                    # Required Libraries
+└── README.md                           # Project Documentation
 📜 License
 This project is open-source and available under the MIT License.
